@@ -1,0 +1,50 @@
+a.current-link {
+  padding-bottom: 0;
+  border-bottom: 1px solid white;
+}
+.underline-animate::after {
+  border-bottom: solid 1px white !important;
+}
+.main-section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-image {
+  background-image: url("../assets/IMG_0669.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  backface-visibility: hidden;
+  filter: brightness(0.5);
+}
+
+.portfolio-items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  text-indent: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5vw;
+}
+.portfolio-items-list a {
+  position: relative;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.portfolio-items-list a h1 {
+  padding: 1rem 0;
+  margin: 0;
+  font-family: "Cormorant Garamond" !important;
+  font-weight: 300 !important;
+  transition: 0.5s;
+}
+
+.portfolio-items-list a h1:hover {
+  /* transition: 0.5s; */
+  filter: drop-shadow(0 0 0.3rem black);
+}

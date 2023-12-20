@@ -1,0 +1,175 @@
+body {
+  background-color: #f1f1ef !important;
+}
+.nav-title {
+  color: black !important;
+}
+.nav-item .social {
+  border: 2px solid rgb(0, 0, 0) !important;
+}
+.nav-item .social:hover {
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.2s linear, border 0.01s ease, color 0.01s ease;
+  color: rgb(255, 255, 255) !important;
+  border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.nav-item .nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+
+a.current-link {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.underline-animate::after {
+  border-bottom: solid 1px black !important;
+}
+
+.content-wrapper .content {
+  padding: 2vh 4vw !important;
+}
+
+.booking-details h2 {
+  font-size: 57px;
+  text-transform: uppercase;
+  text-align: start;
+  color: black;
+}
+.underline-animate::after {
+  border-bottom: solid 1px black !important;
+}
+.booking-details p {
+  font-size: 20px;
+}
+
+.booking-details div:nth-child(2) {
+  margin: 3.3vmax 0;
+}
+
+.contact .email {
+  line-height: 1.8;
+}
+.contact .email span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em !important;
+}
+
+.appoinment-details {
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 1px 0px;
+}
+.appoinment-details .appoinment {
+  padding: 0px 33px 33px;
+}
+
+.appoinment .appoinment-header {
+  padding-bottom: 0;
+}
+.appoinment .appoinment-header .header-area {
+  display: flex;
+  padding: 26px 0;
+  justify-content: flex-end;
+}
+/* .header-area ul {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 1px 0px;
+} */
+.header-area .nav-item {
+  margin: 0 !important;
+}
+.header-area .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 14px !important;
+}
+.header-area .nav-item .nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000000;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.header-area .nav-item .nav-link:hover:after {
+  transform: scaleX(1);
+}
+
+.title h2 {
+  text-align: center;
+  color: black;
+  font-size: 20px !important;
+  font-weight: 700;
+}
+
+.appoinment-list {
+  margin-top: 3.3vmax;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 1px 0px;
+}
+.appoinment-list li {
+  list-style: none;
+  /* display: flex;
+  width: 100%; */
+}
+
+.appoinments {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 33px 22px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.appoinment .booking p {
+  margin: 0 !important;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.appoinment .booking p span {
+  font-weight: 400;
+  color: rgb(105, 105, 105) !important;
+}
+.booking-button button {
+  outline: none;
+  text-align: center;
+  align-items: center;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  padding: 0px 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px) scale(1, 1);
+  transition: transform 50ms ease 0s;
+  min-height: 36px;
+}
+
+.appoinment footer div {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appoinment footer div video {
+  width: 250px;
+}

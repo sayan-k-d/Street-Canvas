@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/workDetails.css" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/cormorant-garamond"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-2"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Details</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid nav-header">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active current-link"
+                  aria-current="page"
+                  href="/work.html"
+                  >Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active underline"
+                  aria-current="page"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active underline"
+                  aria-current="page"
+                  href="bookings.html"
+                  >Bookings</a
+                >
+              </li>
+            </ul>
+            <a class="navbar-brand mx-auto nav-title" href="/home.html"
+              >Street Canvas</a
+            >
+            <div class="d-flex" role="search">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active social" aria-current="page" href="#"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active social" aria-current="page" href="#"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active social" aria-current="page" href="#"
+                    ><i class="bi bi-pinterest"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- content -->
+    <section class="page-section">
+      <div class="page-background">
+        <div class="background-content project-main-image">
+          <!-- <img src="./assets/darjeeling/XWDJ6301.JPG" alt="" /> -->
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="content">
+          <div class="content-desc">
+            <!-- <h2>North Bengal</h2>
+            <i>The Queen of Hills</i> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gallary-wrapper">
+      <div class="gallary-content"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <section class="footer-wrapper">
+      <div class="footer-content">
+        <h4>Nikita Biswas</h4>
+        <p>
+          <em>Street Photographer<br /><br /></em>__
+          <br /><br />nikitabiswasofficial@gmail.com
+        </p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const stemParam = urlParams.get("stem");
+      let gallaryContent = document.querySelector(".gallary-content");
+      let contentDescription = document.querySelector(".content-desc");
+      let mainImage = document.querySelector(".project-main-image");
+      let contentData;
+      let imageArray = {
+        darjeelingArray: [
+          "./assets/darjeeling/DLUN6088.JPG",
+          "./assets/darjeeling/XWDJ6301.JPG",
+          "./assets/darjeeling/DSC_0017.jpg",
+          "./assets/darjeeling/WHSU4948.JPG",
+          "./assets/darjeeling/DSC_0015.jpg",
+          "./assets/darjeeling/DSC_0157.jpg",
+          "./assets/darjeeling/DSC_0091.jpg",
+          "./assets/darjeeling/DSC_0164.jpg",
+        ],
+        varanashiArray: [
+          "./assets/varanashi/DXTZ9776.JPG",
+          "./assets/varanashi/CROY0588.JPG",
+          "./assets/varanashi/EKKJ4064.JPG",
+          "./assets/varanashi/BOPU9513.JPG",
+          "./assets/varanashi/ECJQ6495.JPG",
+          "./assets/varanashi/ESAB3668.JPG",
+          "./assets/varanashi/PBQY4019.JPG",
+          "./assets/varanashi/XJBV1544.JPG",
+          "./assets/varanashi/IGUG5177.JPG",
+        ],
+        puruliArray: [
+          "./assets/purulia/IMG_2259.JPG",
+          "./assets/purulia/IMG_6236.JPG",
+          "./assets/purulia/IMG_6257.JPG",
+          "./assets/purulia/IMG_2257.JPG",
+          "./assets/purulia/IMG_6135.JPG",
+          "./assets/purulia/IMG_6411.JPG",
+          "./assets/purulia/IMG_6381.JPG",
+        ],
+        manaliArray: [
+          "./assets/manali/DSC_0056.JPG",
+          "./assets/manali/IMG_0414.JPG",
+          "./assets/manali/IMG_0532.JPG",
+          "./assets/manali/IMG_0624.JPG",
+          "./assets/manali/IMG_1295.JPG",
+          "./assets/manali/IMG_1299.JPG",
+        ],
+      };
+
+      let title = document.createElement("h1");
+      let description = document.createElement("i");
+      let image = document.createElement("img");
+      if (stemParam === "northBengal") {
+        contentData = imageArray.darjeelingArray;
+        title.innerText = "Darjeeling";
+        description.innerText = "The Queen of Hills";
+        image.src = "./assets/darjeeling/XWDJ6301.JPG";
+      } else if (stemParam === "varanashi") {
+        contentData = imageArray.varanashiArray;
+        title.innerText = "Varanashi";
+        description.innerText = "City of Light";
+        image.src = "./assets/varanashi/EKKJ4064.JPG";
+      } else if (stemParam === "purulia") {
+        contentData = imageArray.puruliArray;
+        title.innerText = "Purulia";
+        description.innerText = "Vajra-bhumi";
+        image.src = "./assets/purulia/IMG_6257.JPG";
+      } else if (stemParam === "manali") {
+        contentData = imageArray.manaliArray;
+        title.innerText = "Manali";
+        description.innerText = "Valley of the Gods";
+        image.src = "./assets/manali/IMG_1299.JPG";
+      }
+      // else gallaryContent.innerHTML("<h1>No Content Available</h1>");
+      mainImage.appendChild(image);
+      contentDescription.appendChild(title);
+      contentDescription.appendChild(description);
+      // gallary.classList.add();
+      // console.log(contentData);
+      for (let i = 0; i < contentData.length; i++) {
+        if (i % 3 === 0) {
+          var gallary = document.createElement("div");
+          gallary.classList.add("gallary", "row");
+        }
+        let image = document.createElement("img");
+        image.src = contentData[i];
+        image.alt = "Image-" + i + 1;
+        // data-bs-toggle="modal"
+        // data-bs-target="#staticBackdrop"
+        image.setAttribute("data-bs-toggle", "modal");
+        image.setAttribute("data-bs-target", "#staticBackdrop");
+        image.addEventListener("click", () => {
+          modalBg(contentData[i]);
+        });
+        let col = document.createElement("div");
+        col.classList.add("col-md-4", "canvas");
+        col.appendChild(image);
+        gallary.appendChild(col);
+        if (i === contentData.length - 1 || (i + 1) % 3 === 0) {
+          gallaryContent.appendChild(gallary);
+        }
+      }
+
+      function modalBg(bg) {
+        let modalCotent = document.querySelector(".modal-content");
+        modalCotent.style.backgroundImage = `url(${bg})`;
+      }
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- the queen of hills d Valley of the Gods m Vajra-bhumi p city of light v -->
