@@ -1,9 +1,9 @@
 let underline = document.getElementsByClassName("underline");
 if (window.location.pathname === "/work") {
   document.querySelector(".work").classList.add("current-link");
-} else if (window.location.pathname === "/about.html")
+} else if (window.location.pathname === "/about")
   document.querySelector(".about").classList.add("current-link");
-else if (window.location.pathname === "/bookings.html")
+else if (window.location.pathname === "/bookings")
   document.querySelector(".booking").classList.add("current-link");
 
 for (let i = 0; i < underline.length; i++)
