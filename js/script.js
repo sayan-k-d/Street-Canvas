@@ -1,5 +1,5 @@
 let underline = document.getElementsByClassName("underline");
-if (window.location.pathname === "/work.html") {
+if (window.location.pathname === "/work") {
   document.querySelector(".work").classList.add("current-link");
 } else if (window.location.pathname === "/about.html")
   document.querySelector(".about").classList.add("current-link");
