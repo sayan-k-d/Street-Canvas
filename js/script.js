@@ -1,9 +1,20 @@
 let underline = document.getElementsByClassName("underline");
-if (window.location.pathname === "/work") {
+console.log(window.location.pathname);
+
+if (
+  window.location.pathname === "/work" ||
+  window.location.pathname === "/work.html"
+) {
   document.querySelector(".work").classList.add("current-link");
-} else if (window.location.pathname === "/about")
+} else if (
+  window.location.pathname === "/about" ||
+  window.location.pathname === "/about.html"
+)
   document.querySelector(".about").classList.add("current-link");
-else if (window.location.pathname === "/bookings")
+else if (
+  window.location.pathname === "/bookings" ||
+  window.location.pathname === "/bookings.html"
+)
   document.querySelector(".booking").classList.add("current-link");
 
 for (let i = 0; i < underline.length; i++)
